@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".SigninActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="222dp"
+            android:layout_weight="34"
+            android:background="@drawable/rectangle"
+            android:onClick="goSignUp"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="#1a1824"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/rectangle"
+            android:onClick="close"
+            app:srcCompat="@drawable/union" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="303dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
+        android:text="Welcome back! \nYou’ve been missed"
+        android:textColor="#1a1824"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:freezesText="false"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:longClickable="true"
+        android:onClick="goForgetPassword"
+        android:text="forgot password ?"
+        android:textColor="#1a1824"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rectang"
+        android:shape="rectangle"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>

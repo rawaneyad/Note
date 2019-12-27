@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmessageActivity"
+    android:background="#ffffffff">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="316dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/rectangle"
+        android:onClick="close"
+        app:srcCompat="@drawable/union" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="128dp"
+        android:background="@drawable/path"
+        app:srcCompat="@drawable/group" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="235dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="68dp"
+        android:text="Check your email"
+        android:textColor="#ff1a1824"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="44dp"
+        android:fontFamily="sans-serif"
+        android:gravity="fill_vertical"
+        android:text="We’ve sent instructions on how to reset The password (also check the Spam folder)."
+        android:textColor="#1a1824"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/goEmailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rectang"
+        android:onClick="Checkemail"
+        android:shape="rectangle"
+        android:text="Go to email"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff" />
+</LinearLayout>
