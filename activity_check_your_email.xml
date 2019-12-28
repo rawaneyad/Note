@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.CheckYourEmailActivity">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:onClick="goToEmailApp"
+        android:text="@string/go_to_email"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:autoLink="email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="70dp"
+        android:src="@drawable/img_check_email"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_check_your_email_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_close_check_your_activity"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="108dp"
+        android:onClick="closeActivity"
+        android:src="@drawable/ic_close_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="316dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/rectangle"
+        android:onClick="close"
+        app:srcCompat="@drawable/union" />
+
+    <TextView
+        android:id="@+id/tv_title_check_your_email_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="@string/check_your_email"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+        android:id="@+id/tv_desc_check_your_email_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/we_ve_sent_instructions_on_how_to_reset_the_password_also_check_the_spam_folder"
+        android:textColor="@color/black_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_check_your_email_activity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
